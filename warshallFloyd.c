@@ -29,20 +29,20 @@ void main(){
     printf("Enter no of nodes: ");
     scanf("%d",&n);
 
-    // printf("Enter Adjecency Matrix: \n");
-    // for(int i =0;i<n;i++){
-    //     for(int j = 0;j<n;j++){
-    //         scanf("%d",&a[i][j]);
-    //     }
-    // }
-    // warshall(a,n);
-    // printf("Transitive encloser\n");
-    // for(int i =0;i<n;i++){
-    //     for(int j = 0;j<n;j++){
-    //         printf("%d\t",a[i][j]);
-    //     }
-    //     printf("\n");
-    // }
+    printf("Enter Adjecency Matrix: \n");
+    for(int i =0;i<n;i++){
+        for(int j = 0;j<n;j++){
+            scanf("%d",&a[i][j]);
+        }
+    }
+    warshall(a,n);
+    printf("Transitive encloser\n");
+    for(int i =0;i<n;i++){
+        for(int j = 0;j<n;j++){
+            printf("%d\t",a[i][j]);
+        }
+        printf("\n");
+    }
 
     printf("Enter Cost Matrix: \n");
     for(int i =0;i<n;i++){
