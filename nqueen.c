@@ -52,5 +52,8 @@ void main(){
     int n;
     printf("Enter no. of queen: ");
     scanf("%d",&n);
+    for(int i = 0; i < n; i++){
+        board[i] = 0;
+    }
     nqueen(n,1);
 }
