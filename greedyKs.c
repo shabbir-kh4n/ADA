@@ -1,4 +1,4 @@
-// knapsack Greed
+// knapsack Greedy
 
 #include <stdio.h>
 typedef struct{
