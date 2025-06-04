@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define inf 999;
+#define inf 999
 
 void dj(int cost[10][10],int n,int src){
     int i,j,min,u,v,d[n],visited[n];
