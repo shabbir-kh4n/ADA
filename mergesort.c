@@ -25,7 +25,7 @@ void merge(int a[max],int low,int mid,int high){
         newarr[k++] = a[j++];
     }
 
-    for(int i = 0;i<k;i++){
+    for(int i = low; i <= high; i++){
         a[i] = newarr[i];
     }
 }
@@ -55,8 +55,9 @@ void main(){
     sort(arr,0,n-1);
     clock_t end = clock();
     printf("Sorted Array: ");
+    
     for(int i=0;i<n;i++){
         printf("%d\t",arr[i]);
     }
-    printf("\nTime Taken: %.8f",(double)((end-start)/CLOCKS_PER_SEC));
+    printf("\nTime Taken: %.8f",(double)(end-start)/CLOCKS_PER_SEC);
 }
