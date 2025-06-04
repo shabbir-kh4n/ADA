@@ -20,15 +20,15 @@ void dj(int cost[10][10],int n,int src){
         visited[u] = 1;
 
         for(v=1;v<=n;v++){
-            if(d[u] + cost[u][v] < d[v]){
+            if((d[u]+a[u][v]<d[v]) && (u!=v) && visited[v]==0){
                 d[v] = d[u] + cost[u][v];
             }
         }
     }
-    int ne = 1;
+    
     for(i=1;i<=n;i++){
         if(d[i]!=0 && d[i]!= 999){
-            printf("Edge %d: (%d->%d) = %d\n",ne++,src,i,d[i]);
+            printf("Path from (%d->%d) = %d\n",src,i,d[i]);
         }
     }
 }
